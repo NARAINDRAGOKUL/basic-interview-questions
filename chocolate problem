@@ -1,0 +1,13 @@
+#calculate no of chocolate having by the A IN TOTAL NUMBER OF JAR
+n = int(input())
+arr = list(map(int,input().split()))
+tot_chocolate = 0
+for box in arr:
+    tot_chocolate += (box//3)
+    if box%3!=0:
+        tot_chocolate+=1 
+print(tot_chocolate)
+#output
+3
+10 20 30
+21
