@@ -1,0 +1,40 @@
+n=int(input("n:"))
+k=int(input("k:"))
+arr=list(map(int, input().split(" ")))
+ans=0
+for i in range(n-k+1):
+    sub_arr=arr[i:i+k]
+    print("finding the score for subarray:",sub_arr)
+    sum = 0
+    for ind in range(1,k+1):
+        sum+=sub_arr[ind-1]*ind
+        print("sum is:",sum)
+    print("score is:",sum)
+    if (sum>ans):
+        ans=sum
+print(ans)
+#output
+
+
+n:5
+k:2
+1 2 3 4 5
+finding the score for subarray: [1, 2]
+sum is: 1
+sum is: 5
+score is: 5
+finding the score for subarray: [2, 3]
+sum is: 2
+sum is: 8
+score is: 8
+finding the score for subarray: [3, 4]
+sum is: 3
+sum is: 11
+score is: 11
+finding the score for subarray: [4, 5]
+sum is: 4
+sum is: 14
+score is: 14
+14
+
+=== Code Execution Successful ===
