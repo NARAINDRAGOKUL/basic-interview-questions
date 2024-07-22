@@ -1,0 +1,7 @@
+# calculate dog age now ,in internet 1 year of human age is 7 years of dog age
+dog_age = int(input())
+current_age = dog_age*7
+print(current_age)
+#output
+7
+49
