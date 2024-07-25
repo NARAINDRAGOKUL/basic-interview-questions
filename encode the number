@@ -1,0 +1,12 @@
+n = int(input())
+res = ""
+while n > 0:
+    
+    cur_num = n%10
+    res = str(cur_num**2) + res
+    n = n//10
+print(res)
+#input
+167
+#output
+13649
