@@ -1,0 +1,18 @@
+n = int(input())
+arr = list(map(int,input().split()))
+ans = arr[0]
+max_arr = arr[0]
+for i in arr[1:]:
+    max_arr = max(max_arr+i,i)
+    if max_arr > ans:
+        ans = max_arr
+print(ans)
+#Sample input:
+
+8
+
+-1 2 3 10 -4 7 2 -5
+
+Sample output:
+
+20
