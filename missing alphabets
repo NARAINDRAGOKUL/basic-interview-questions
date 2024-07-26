@@ -1,0 +1,7 @@
+set1 = set(input())
+set2 = set("qwertyuiopasdfghjklzxcvbnm")
+dif = sorted(set2.difference(set1))
+print(''.join(dif))
+#Input: welcome to geeksforgeeks
+
+Output: abdhijnpquvxyz
