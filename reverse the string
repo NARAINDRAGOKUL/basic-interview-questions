@@ -1,0 +1,10 @@
+s = input().split(" ")
+s = s[::-1]
+print(' '.join(s))
+Sample Input:
+
+Hello World
+
+Sample Output:
+
+World Hello
