@@ -1,0 +1,7 @@
+import math
+def evaluation(exp):
+    exp = eval(exp)
+    result = math.ceil(exp)
+    return result
+exp = input()
+print(evaluation(exp))
