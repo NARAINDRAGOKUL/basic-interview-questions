@@ -1,0 +1,19 @@
+def push_zero_to_end(N,arr):
+    count = 0
+    for i in range(N):
+        if arr[i] !=0:
+            arr[count] = arr[i]
+            count += 1 
+    while count < N:
+        arr[count] = 0
+        count += 1 
+    return arr
+N = int(input())
+arr=list(map(int, input().split(" ")))
+output = push_zero_to_end(N, arr)
+print(' '.join(map(str, arr)))
+
+#output
+8
+4 0 5 0 6 0 7 0
+4 5 6 7 0 0 0 0
