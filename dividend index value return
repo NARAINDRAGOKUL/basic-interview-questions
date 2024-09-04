@@ -1,0 +1,11 @@
+def dividend(a,d,q,r):
+    divi = d*q+r 
+    if divi in a:
+        return a.index(divi)
+    else:
+        return -1
+a = list(map(int,input().split()))
+d = int(input())
+q = int(input())
+r = int(input())
+print(dividend(a,d,q,r))
